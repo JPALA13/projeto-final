@@ -2,13 +2,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import make_multilabel_classification
 from sklearn.model_selection import train_test_split
 import pandas as pd
-from skmultilearn.model_selection import IterativeStratification, iterative_train_test_split
+from skmultilearn.model_selection import IterativeStratification
 import time
 
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("Data/new_SE.csv")
+df = pd.read_csv("Data/SE_filter50.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]

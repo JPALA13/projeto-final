@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_multilabel_classification
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, recall_score, f1_score, hamming_loss
+# from sklearn.datasets import make_multilabel_classification
+# from sklearn.model_selection import train_test_split
 import pandas as pd
 from skmultilearn.model_selection import IterativeStratification
 import time
@@ -38,9 +39,11 @@ X_teste, Y_teste = X.iloc[test_indexes, :], Y.iloc[test_indexes, :]
 # linear_model.RidgeClassifierCV
 forest = RandomForestClassifier(random_state=1)
 forest.fit(X_treino, Y_treino)
-predicao = forest.predict(X_teste)
-resultado = forest.score(X_teste, Y_teste)
-print(resultado)
+Y_pred = forest.predict(X_teste)
+print("Precision:", precision_score(Y_teste, Y_pred, average='micro'))
+print("Recall:", recall_score(Y_teste, Y_pred, average='micro'))
+print("F1-measure:", f1_score(Y_teste, Y_pred, average='micro'))
+print("Hamming Loss:", hamming_loss(Y_teste, Y_pred))
 
 end = time.time()
 print(end - start)

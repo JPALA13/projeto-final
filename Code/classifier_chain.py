@@ -15,7 +15,8 @@ Y = df.iloc[:,9096:]
 # n_samples, n_features = 1394, 9096
 # n_classes = 644
 
-chain = ClassifierChain(RandomForestClassifier(random_state=1), order='random', random_state=1)
+forest = RandomForestClassifier(random_state=1, n_estimators=500)
+chain = ClassifierChain(forest, order='random', random_state=1)
 results = stratified_10fold_cv(chain, X, Y)
 
 for k, v in results.items():

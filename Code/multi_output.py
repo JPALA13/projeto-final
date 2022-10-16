@@ -15,7 +15,8 @@ Y = df.iloc[:,9096:]
 # n_samples, n_features = 1394, 9096
 # n_classes = 644
 
-multi_target_forest = MultiOutputClassifier(RandomForestClassifier(random_state=1), n_jobs=4)
+forest = RandomForestClassifier(random_state=1, n_estimators=500)
+multi_target_forest = MultiOutputClassifier(forest, n_jobs=4)
 results = stratified_10fold_cv(multi_target_forest, X, Y)
 
 for k, v in results.items():

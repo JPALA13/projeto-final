@@ -5,6 +5,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import precision_score, recall_score, f1_score, hamming_loss
 from skmultilearn.model_selection import IterativeStratification
 from sklearn.metrics import multilabel_confusion_matrix
+import numpy as np
 
 # Carga dos dados para memória
 df = pd.read_csv("../Data/SE_filter50.csv")
@@ -23,10 +24,10 @@ X_teste, Y_teste = X.iloc[test_indexes, :], Y.iloc[test_indexes, :]
 
 forest = RandomForestClassifier(random_state=1, n_estimators=500)
 
-multi_target_forest = MultiOutputClassifier(forest, n_jobs=4)
+# multi_target_forest = MultiOutputClassifier(forest, n_jobs=4)
 binary_relevance = OneVsRestClassifier(forest, n_jobs=4)
 
-estimators = [multi_target_forest, binary_relevance]
+estimators = [binary_relevance]
 
 results = []
 for estimator in estimators:
@@ -36,14 +37,39 @@ for estimator in estimators:
     Y_pred = estimator.predict(X_teste)
     results.append(Y_pred)
 
-    print(f'Micro-Precision: {precision_score(Y_teste, Y_pred, average="micro")}')
-    print(f'Micro-Recall: {recall_score(Y_teste, Y_pred, average="micro")}')
-    print(f'Micro-F1-measure: {f1_score(Y_teste, Y_pred, average="micro")}')
-    print(f'Hamming Loss: {hamming_loss(Y_teste, Y_pred)}')
+    print(f'Micro-Precision: {precision_score(Y_teste, Y_pred, average="micro")}') # TP/(TP+FP)
+    print(f'Micro-Recall: {recall_score(Y_teste, Y_pred, average="micro")}') # TP/(TP+FN)
+    print(f'Micro-F1-measure: {f1_score(Y_teste, Y_pred, average="micro")}') # 2*P*R/(P+R)
+    print(f'Hamming Loss: {hamming_loss(Y_teste, Y_pred)}') # 1 - ACC
 
     print()
-    print(multilabel_confusion_matrix(Y_teste, Y_pred))
-
+    matriz = multilabel_confusion_matrix(Y_teste, Y_pred)
+    print(f'TN: {matriz[:, 0, 0].sum()}')
+    print(f'FP: {matriz[:, 0, 1].sum()}')
+    print(f'FN: {matriz[:, 1, 0].sum()}')
+    print(f'TP: {matriz[:, 1, 1].sum()}')
+    print()
+    print(matriz)
     print()
 
-print(results[0]==results[1])
+# print(results[0]==results[1])
+
+# a = np.array([[[3, 1],
+#                [0, 2]],
+              
+#               [[5, 0],
+#                [1, 0]],
+
+#               [[2, 1],
+#                [1, 2]]])
+# print(a[:, 1, 1].sum())
+
+# Micro-Precision: 0.49275302812564153
+# Micro-Recall: 0.36221779548472777
+# Micro-F1-measure: 0.4175204828917843
+# Hamming Loss: 0.15203316261668665 
+
+# TN: 174762
+# FP: 12354
+# FN: 21131
+# TP: 12001

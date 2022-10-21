@@ -24,8 +24,7 @@ X_teste, Y_teste = X.iloc[test_indexes, :], Y.iloc[test_indexes, :]
 
 forest = RandomForestClassifier(random_state=1, n_estimators=500)
 
-# multi_target_forest = MultiOutputClassifier(forest, n_jobs=4)
-binary_relevance = OneVsRestClassifier(forest, n_jobs=4)
+binary_relevance = MultiOutputClassifier(forest, n_jobs=4)
 
 estimators = [binary_relevance]
 

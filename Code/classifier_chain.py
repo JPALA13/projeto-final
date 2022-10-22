@@ -16,7 +16,7 @@ Y = df.iloc[:,9096:]
 # n_classes = 644
 
 forest = RandomForestClassifier(random_state=1, n_estimators=500)
-chain = ClassifierChain(forest, order='random', random_state=1)
+chain = ClassifierChain(forest, random_state=1)
 results = stratified_10fold_cv(chain, X, Y)
 
 for k, v in results.items():
@@ -30,3 +30,9 @@ print(end - start)
 # Micro-F1-measure: 0.25942130276352493
 # Hamming Loss: 0.13546468632763617
 # 6071.369469642639
+
+# Micro-Precision: 0.5527377673639794
+# Micro-Recall: 0.21180096823555022
+# Micro-F1-measure: 0.30502843249742356
+# Hamming Loss: 0.13370104618957185
+# 38350.799241542816

@@ -33,8 +33,8 @@ print(end - start)
 # linear_model.RidgeClassifier
 # linear_model.RidgeClassifierCV
 
-# Micro-Precision: 0.6611549090711953
-# Micro-Recall: 0.22258565618601836
-# Micro-F1-measure: 0.332432633954208
-# Hamming Loss: 0.12377188439721624
-# 1031.3114876747131
+# Micro-Precision: 0.6641639564341002
+# Micro-Recall: 0.22248232024117948
+# Micro-F1-measure: 0.33304088146523175
+# Hamming Loss: 0.123434380164483
+# 5048.662222623825

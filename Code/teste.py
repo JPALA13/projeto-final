@@ -1,11 +1,9 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.multioutput import MultiOutputClassifier
-from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import precision_score, recall_score, f1_score, hamming_loss
 from skmultilearn.model_selection import IterativeStratification
 from sklearn.metrics import multilabel_confusion_matrix
-import numpy as np
 
 # Carga dos dados para memória
 df = pd.read_csv("../Data/SE_filter50.csv")

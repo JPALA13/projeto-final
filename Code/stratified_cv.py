@@ -3,12 +3,15 @@ from skmultilearn.model_selection import IterativeStratification
 import numpy as np
 
 def stratified_10fold_cv(estimator, X, Y):
-    precision = [0] * 10
-    recall = [0] * 10
-    f_measure = [0] * 10
-    loss_hamming = [0] * 10
+    size = 10
 
-    k_fold = IterativeStratification(n_splits=10, order=1)
+    precision = np.zeros(size)
+    recall = np.zeros(size)
+    f_measure = np.zeros(size)
+    loss_hamming = np.zeros(size)
+
+    k_fold = IterativeStratification(n_splits=size, order=1)
+
     for index, (train_indexes, test_indexes) in enumerate(k_fold.split(X, Y)):
         print(index)
         

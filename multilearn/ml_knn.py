@@ -1,12 +1,12 @@
 import pandas as pd
-from mlknn import MLkNN
+from skmultilearn.adapt import MLkNN
 from stratified_cv import stratified_10fold_cv
 import time
 
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_order10.csv")
+df = pd.read_csv("../Data/SE_top100.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -38,7 +38,15 @@ print(end - start)
 # 12.226706504821777
 
 # Top 50
-
+# Micro-Precision: 0.6183190882351546
+# Micro-Recall: 0.6411493018122922
+# Micro-F1-measure: 0.6287174340115138
+# Hamming Loss: 0.38100419491024134
+# 19.319668292999268
 
 # Top 100
-
+# Micro-Precision: 0.5744138454311265
+# Micro-Recall: 0.514518609942194
+# Micro-F1-measure: 0.5419672594597528
+# Hamming Loss: 0.3482265165250163
+# 27.606070280075073

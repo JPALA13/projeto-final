@@ -7,7 +7,7 @@ import time
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_top10.csv")
+df = pd.read_csv("../Data/SE_order10.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -32,5 +32,15 @@ print(end - start)
 # Hamming Loss: 0.27067477184098365
 # 408.7702934741974
 
-# Order Top 10
+# Order 10
+# Micro-Precision: 0.6225281335814561
+# Micro-Recall: 0.6710178965311934
+# Micro-F1-measure: 0.6446885325590596
+# Hamming Loss: 0.3684461152882206
+# 818.9287805557251
+
+# Top 50
+
+
+# Top 100
 

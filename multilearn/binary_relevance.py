@@ -2,13 +2,12 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from skmultilearn.problem_transform import BinaryRelevance
 from stratified_cv import stratified_10fold_cv
-import numpy as np
 import time
 
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_top10.csv")
+df = pd.read_csv("../Data/SE_order10.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -34,5 +33,15 @@ print(end - start)
 # Hamming Loss: 0.26650533839238155
 # 1410.4593708515167
 
-# Order Top 10
+# Order 10
+# Micro-Precision: 0.623083630574272
+# Micro-Recall: 0.7021143764636766
+# Micro-F1-measure: 0.6588139186716382
+# Hamming Loss: 0.3622726829862379
+# 1264.3939096927643
+
+# Top 50
+
+
+# Top 100
 

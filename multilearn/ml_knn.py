@@ -1,12 +1,12 @@
 import pandas as pd
 from skmultilearn.adapt import MLkNN
-from Code.stratified_cv import stratified_10fold_cv
+from stratified_cv import stratified_10fold_cv
 import time
 
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_filter50_order.csv")
+df = pd.read_csv("../Data/SE_top10.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -23,4 +23,8 @@ for k, v in results.items():
 end = time.time()
 print(end - start)
 
+# Top 10
+
+
+# Order Top 10
 

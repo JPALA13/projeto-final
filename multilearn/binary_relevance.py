@@ -7,7 +7,7 @@ import time
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_top100.csv")
+df = pd.read_csv("../Data/SE_filter50.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -48,4 +48,8 @@ print(end - start)
 # 7486.395601272583
 
 # Top 100
-
+# Micro-Precision: 0.6145133626647526
+# Micro-Recall: 0.5905508000471225
+# Micro-F1-measure: 0.6018775057143892
+# Hamming Loss: 0.31313859566838015
+# 16208.34364080429

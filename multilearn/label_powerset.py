@@ -47,4 +47,8 @@ print(end - start)
 # 4637.660880804062
 
 # Top 100
-
+# Micro-Precision: 0.5364550678909326
+# Micro-Recall: 0.47956447421270915
+# Micro-F1-measure: 0.5056650522758699
+# Hamming Loss: 0.3756219603119154
+# 6198.375498533249

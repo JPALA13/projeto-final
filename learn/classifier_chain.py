@@ -35,3 +35,10 @@ print(end - start)
 # Micro-Recall: 0.47329762531460784
 # Micro-F1-measure: 0.4225262029283014
 # Hamming Loss: 0.17953282464702663
+# ???
+
+# Micro-Precision: 0.31723039254589375
+# Micro-Recall: 0.6087955726881614
+# Micro-F1-measure: 0.416806956634771
+# Hamming Loss: 0.2362381295726867
+# 33186.419647693634

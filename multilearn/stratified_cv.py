@@ -10,7 +10,7 @@ def stratified_10fold_cv(estimator, X, Y):
     f_measure = np.zeros(size)
     loss_hamming = np.zeros(size)
 
-    k_fold = IterativeStratification(n_splits=size, order=1)
+    k_fold = IterativeStratification(n_splits=size, random_state=1)
 
     for index, (train_indexes, test_indexes) in enumerate(k_fold.split(np.asarray(X), np.asarray(Y))):
         print(index)

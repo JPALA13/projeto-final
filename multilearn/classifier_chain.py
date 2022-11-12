@@ -7,7 +7,7 @@ import time
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_filter50.csv")
+df = pd.read_csv("../Data/SE_top100.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -26,29 +26,41 @@ end = time.time()
 print(end - start)
 
 # Top 10
-# Micro-Precision: 0.7490020254643077
-# Micro-Recall: 0.9438241767265776
-# Micro-F1-measure: 0.8350347801668949
-# Hamming Loss: 0.270838943725462
-# 831.9310872554779
-
-# Order 10
-# Micro-Precision: 0.6222922389934015
-# Micro-Recall: 0.6847875052145518
-# Micro-F1-measure: 0.6517239668768557
-# Hamming Loss: 0.3650264147207872
-# 799.8484697341919
+# Micro-Precision: 0.748348447517445
+# Micro-Recall: 0.9461567006368521
+# Micro-F1-measure: 0.8355927637674896
+# Macro-Precision: 0.746978687307992
+# Macro-Recall: 0.9450513213273204
+# Macro-F1-measure: 0.833046893694285
+# Hamming Loss: 0.270412149366789
+# 840.6297750473022
 
 # Top 50
-# Micro-Precision: 0.5392082573461388
-# Micro-Recall: 0.9096471743948635
-# Micro-F1-measure: 0.6761750877990695
-# Hamming Loss: 0.43910204182347956
-# 3348.16602230072
+# Micro-Precision: 0.5390064272162228
+# Micro-Recall: 0.9080627937694986
+# Micro-F1-measure: 0.6760421294557867
+# Macro-Precision: 0.533527384244574
+# Macro-Recall: 0.9018404100511843
+# Macro-F1-measure: 0.6635463110992145
+# Hamming Loss: 0.4385806497834814
+# 3368.351553440094
 
 # Top 100
-# Micro-Precision: 0.44457908612068964
-# Micro-Recall: 0.8843833396885534
-# Micro-F1-measure: 0.5909770211135531
-# Hamming Loss: 0.4909609765216619
-# 5953.670835733414
+# Micro-Precision: 0.4421686098874054
+# Micro-Recall: 0.8863914770122312
+# Micro-F1-measure: 0.5895454351218963
+# Macro-Precision: 0.4343038255062718
+# Macro-Recall: 0.8745805455477417
+# Macro-F1-measure: 0.5699618376988589
+# Hamming Loss: 0.49506823289239466
+# 6039.097524881363
+
+# Order 10
+# Micro-Precision: 0.622572385866316
+# Micro-Recall: 0.6971702318989441
+# Micro-F1-measure: 0.6570809739823398
+# Macro-Precision: 0.6232188022362182
+# Macro-Recall: 0.6974162819549891
+# Macro-F1-measure: 0.6569534480156708
+# Hamming Loss: 0.36284137808739436
+# 826.7751734256744

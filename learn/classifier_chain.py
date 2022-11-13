@@ -25,18 +25,21 @@ for k, v in results.items():
 end = time.time()
 print(end - start)
 
+# Random
 # Micro-Precision: 0.5527377673639794
 # Micro-Recall: 0.21180096823555022
 # Micro-F1-measure: 0.30502843249742356
 # Hamming Loss: 0.13370104618957185
 # 38350.799241542816
 
+# Order
 # Micro-Precision: 0.3820605760982242
 # Micro-Recall: 0.47329762531460784
 # Micro-F1-measure: 0.4225262029283014
 # Hamming Loss: 0.17953282464702663
 # ???
 
+# Top
 # Micro-Precision: 0.31723039254589375
 # Micro-Recall: 0.6087955726881614
 # Micro-F1-measure: 0.416806956634771

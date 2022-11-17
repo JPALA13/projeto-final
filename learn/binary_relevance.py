@@ -7,7 +7,7 @@ import time
 start = time.time()
 
 # Carga dos dados para memória
-df = pd.read_csv("../Data/SE_filter50_order.csv")
+df = pd.read_csv("../Data/SE_filter50_top.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]
 Y = df.iloc[:,9096:]
@@ -26,10 +26,13 @@ end = time.time()
 print(end - start)
 
 # Random
-# Micro-Precision: 0.5517972818544343
-# Micro-Recall: 0.3210789127339513
-# Micro-F1-measure: 0.40477014726659954
-# Hamming Loss: 0.13085041708679013
+# Micro-Precision: 0.5533844490479403
+# Micro-Recall: 0.32430040963222495
+# Micro-F1-measure: 0.4076684847283073
+# Macro-Precision: 0.28920050022214594
+# Macro-Recall: 0.14481243202785893
+# Macro-F1-measure: 0.17384523378441527
+# Hamming Loss: 0.13073857435559366
 # 21245.271294355392
 
 # Order
@@ -43,4 +46,11 @@ print(end - start)
 # 21104.044816732407
 
 # Top
-
+# Micro-Precision: 0.5523301175659994
+# Micro-Recall: 0.32126778873524736
+# Micro-F1-measure: 0.40562050521192017
+# Macro-Precision: 0.2861223904827458
+# Macro-Recall: 0.14219563241380312
+# Macro-F1-measure: 0.17098782823513636
+# Hamming Loss: 0.13067339780602186
+# 21645.646597385406

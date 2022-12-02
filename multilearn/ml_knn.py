@@ -5,7 +5,7 @@ import time
 
 start = time.time()
 
-# Carga dos dados para memória
+# Carga dos dados para memoria
 df = pd.read_csv("../Data/SE_top100.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]

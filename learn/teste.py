@@ -5,7 +5,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, hamming_los
 from skmultilearn.model_selection import IterativeStratification
 from sklearn.metrics import multilabel_confusion_matrix
 
-# Carga dos dados para memória
+# Carga dos dados para memoria
 df = pd.read_csv("../Data/SE_filter50.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:,:9096]

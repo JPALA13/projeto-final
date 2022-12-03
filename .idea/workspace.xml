@@ -2,35 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bad2e61d-81c1-4f11-b915-98c1d9c91c99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/learn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/multilearn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/preProcess/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/validation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_filter50.arff" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_filter50.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_filter50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_filter50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_filter50_order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_filter50_order.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_filter50_top.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_filter50_top.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_order10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_order10.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_top10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_top10.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_top100.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_top100.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SE_top50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/SE_top50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/se_frequencies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/se_frequencies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/se_relative_frequencies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/data/se_relative_frequencies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/binary_relevance.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/learn/binary_relevance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/classifier_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/learn/classifier_chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/stratified_cv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/learn/support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/learn/teste.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilearn/binary_relevance.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/multilearn/binary_relevance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilearn/classifier_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/multilearn/classifier_chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilearn/label_powerset.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/multilearn/label_powerset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilearn/ml_knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/multilearn/ml_knn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilearn/stratified_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/validation/stratified_cv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preProcess/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/preProcess/order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preProcess/relative_frequencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/preProcess/relative_frequencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preProcess/top.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/preProcess/top.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/eval_top_features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/gsl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/gslcblas.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_bagging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_criterion.cp39-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_criterion.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_criterion.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_splitter.cp39-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_splitter.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_splitter.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_tree.cp39-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_tree.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_tree.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_tree_classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_utils.cp39-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_utils.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/marcelo/ud_utils.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/multilearn/binary_relevance.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/multilearn/binary_relevance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +46,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IOsIuOnTgHJKahOlq8E7Rx5TFu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="RainbowCSV.Settings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,7 +67,7 @@
       <recent name="C:\Users\jpala\OneDrive\Documentos\GitHub\projeto-final" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.classifier_chain (1)">
+  <component name="RunManager" selected="Python.binary_relevance">
     <configuration name="binary_relevance (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="projeto-final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,6 +81,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/learn/binary_relevance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="binary_relevance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projeto-final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/multilearn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/multilearn/binary_relevance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +152,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="label_powerset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ml_knn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="projeto-final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,28 +164,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/multilearn/label_powerset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="support" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projeto-final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/learn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/learn/support.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/multilearn/ml_knn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.binary_relevance" />
+        <item itemvalue="Python.ml_knn" />
+        <item itemvalue="Python.binary_relevance (1)" />
         <item itemvalue="Python.classifier_chain (1)" />
         <item itemvalue="Python.classifier_chain" />
-        <item itemvalue="Python.support" />
-        <item itemvalue="Python.binary_relevance (1)" />
-        <item itemvalue="Python.label_powerset" />
       </list>
     </recent_temporary>
   </component>
@@ -206,5 +204,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

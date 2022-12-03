@@ -1,16 +1,20 @@
+import sys
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from skmultilearn.problem_transform import LabelPowerset
-from stratified_cv import stratified_10fold_cv
+from code.validation.stratified_cv import stratified_10fold_cv
 import time
+
+# setting path
+sys.path.append('../code')
 
 start = time.time()
 
 # Carga dos dados para memoria
-df = pd.read_csv("../Data/SE_top50.csv")
+df = pd.read_csv("../data/SE_top50.csv")
 df = df.drop('CID', axis=1)
-X = df.iloc[:,:9096]
-Y = df.iloc[:,9096:]
+X = df.iloc[:, :9096]
+Y = df.iloc[:, 9096:]
 
 # n_samples, n_features = 1394, 9096
 # n_classes = 644

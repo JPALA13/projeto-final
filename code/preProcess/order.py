@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("../Data/SE_top10.csv")
+df = pd.read_csv("../data/SE_top10.csv")
 half = df.shape[0]/2
 
 new = df.iloc[:, :9097]

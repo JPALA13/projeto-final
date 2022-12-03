@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("../Data/SE.csv")
+df = pd.read_csv("../data/SE.csv")
 
 new = df.iloc[:, :9097]
 

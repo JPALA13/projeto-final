@@ -1,16 +1,12 @@
-import sys
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from code.validation.stratified_cv import stratified_10fold_cv
+from stratified_cv import stratified_10fold_cv
 import time
-
-# setting path
-sys.path.append('../code')
 
 start = time.time()
 
 # Carga dos dados para memoria
-df = pd.read_csv("../data/SE_filter50_top.csv")
+df = pd.read_csv("../../data/SE_filter50_top.csv")
 df = df.drop('CID', axis=1)
 X = df.iloc[:, :9096]
 Y = df.iloc[:, 9096:]

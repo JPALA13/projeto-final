@@ -1,6 +1,6 @@
 import pandas as pd
 # from sklearn.ensemble import RandomForestClassifier
-from marcelo.ud_forest import DFERandomForestClassifier
+from ucd.code.ud_forest import DFERandomForestClassifier
 from skmultilearn.problem_transform import BinaryRelevance
 from validation.stratified_cv import stratified_10fold_cv
 import time
